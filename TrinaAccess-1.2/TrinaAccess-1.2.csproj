@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D12566F2-E3B8-4A51-9802-67EABC4C0BAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrinaAccess_1._2</RootNamespace>
+    <AssemblyName>Trina Access 1.2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>diamond.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.Wizard, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cari_Hareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari_Hareket.Designer.cs">
+      <DependentUpon>Cari_Hareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cari_Kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari_Kayit.Designer.cs">
+      <DependentUpon>Cari_Kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cari_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari_Panel.Designer.cs">
+      <DependentUpon>Cari_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura_Alis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura_Alis.Designer.cs">
+      <DependentUpon>Fatura_Alis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura_Panel.Designer.cs">
+      <DependentUpon>Fatura_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura_Satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura_Satis.Designer.cs">
+      <DependentUpon>Fatura_Satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkinda.Designer.cs">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa_Panel.Designer.cs">
+      <DependentUpon>Kasa_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGecmis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGecmis.Designer.cs">
+      <DependentUpon>KullaniciGecmis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciPanel.Designer.cs">
+      <DependentUpon>KullaniciPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel.Designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rehber_Cari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rehber_Cari.Designer.cs">
+      <DependentUpon>Rehber_Cari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rehber_Depo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rehber_Depo.Designer.cs">
+      <DependentUpon>Rehber_Depo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rehber_Il.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rehber_Il.Designer.cs">
+      <DependentUpon>Rehber_Il.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rehber_Stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rehber_Stok.Designer.cs">
+      <DependentUpon>Rehber_Stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resim_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resim_Ekle.Designer.cs">
+      <DependentUpon>Resim_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1cs.Designer.cs">
+      <DependentUpon>SplashScreen1cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_DepoTanim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok_DepoTanim.Designer.cs">
+      <DependentUpon>Stok_DepoTanim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_Hareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok_Hareket.Designer.cs">
+      <DependentUpon>Stok_Hareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_Kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok_Kayit.Designer.cs">
+      <DependentUpon>Stok_Kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok_Panel.Designer.cs">
+      <DependentUpon>Stok_Panel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cari_Hareket.resx">
+      <DependentUpon>Cari_Hareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari_Kayit.resx">
+      <DependentUpon>Cari_Kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari_Panel.resx">
+      <DependentUpon>Cari_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura_Alis.resx">
+      <DependentUpon>Fatura_Alis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura_Panel.resx">
+      <DependentUpon>Fatura_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura_Satis.resx">
+      <DependentUpon>Fatura_Satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkinda.resx">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa_Panel.resx">
+      <DependentUpon>Kasa_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGecmis.resx">
+      <DependentUpon>KullaniciGecmis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciPanel.resx">
+      <DependentUpon>KullaniciPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rehber_Cari.resx">
+      <DependentUpon>Rehber_Cari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rehber_Depo.resx">
+      <DependentUpon>Rehber_Depo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rehber_Il.resx">
+      <DependentUpon>Rehber_Il.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rehber_Stok.resx">
+      <DependentUpon>Rehber_Stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resim_Ekle.resx">
+      <DependentUpon>Resim_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1cs.resx">
+      <DependentUpon>SplashScreen1cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok_DepoTanim.resx">
+      <DependentUpon>Stok_DepoTanim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok_Hareket.resx">
+      <DependentUpon>Stok_Hareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok_Kayit.resx">
+      <DependentUpon>Stok_Kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok_Panel.resx">
+      <DependentUpon>Stok_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safebox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamondx32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="diamond.ico" />
+    <None Include="Resources\Ranorknet.png" />
+    <None Include="Resources\visual-studio-2013-logo.png" />
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
