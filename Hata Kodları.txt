@@ -1,0 +1,2 @@
+01204 -> Stok Kayýt varolan kodun update komutu gönderilemedi.
+01205 -> Stok Kayýt yeni açýlacak kodun insert komutu gönderilemedi.
